@@ -1,16 +1,14 @@
-# Form Builder User Data Store client (Node)
+# Form Builder Submitter client (Node)
 
-Client for making requests to Form Builder platform user datastore endpoints
+Client for making requests to Form Builder platform submitter endpoints
 
 ## Requirements
 
 Node
 
-Valid values for serviceSlug, serviceToken, userDataStoreUrl
-
 ## Installation
 
-`npm install @ministryofjustice/fb-user-datastore-client-node`
+`npm install @ministryofjustice/fb-submitter-client-node`
 
 ## Usage
 
@@ -18,19 +16,19 @@ Valid values for serviceSlug, serviceToken, userDataStoreUrl
 
 ``` javascript
 // load client
-const userDataStoreClient = require('@ministryofjustice/fb-user-datastore-client-node')
+const FBSubmitterClient = require('@ministryofjustice/fb-submitter-client-node')
 
 // initialise client
-userDataStoreClient.get(serviceSlug, serviceToken, userDataStoreUrl)
+const submitterClient = new FBSubmitterClient(serviceToken, submitterUrl, serviceSlug)
 ```
 
 ### Fetching and storing
 
 ``` javascript
-// fetch user data
-const userData = await userDataStoreClient.get(userId, userToken)
+// get submission status
+const status = await submitterClient.getStatus(submissionId)
 
-// store user data
-await userDataStoreClient.set(userId, userToken, userData)
+// submit 
+const status = await submitterClient.submit(userId, userToken, submissions)
 ```
 
