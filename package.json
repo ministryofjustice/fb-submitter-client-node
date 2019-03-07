@@ -1,6 +1,6 @@
 {
   "name": "@ministryofjustice/fb-submitter-client-node",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "Form Builder Submitter Client (Node)",
   "main": "lib/fb-submitter-client.js",
   "repository": {
@@ -28,6 +28,6 @@
     "tape": "^4.10.1"
   },
   "dependencies": {
-    "@ministryofjustice/fb-jwt-client-node": "^0.0.15"
+    "@ministryofjustice/fb-jwt-client-node": "0.0.16"
   }
 }
