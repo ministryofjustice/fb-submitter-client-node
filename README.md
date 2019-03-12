@@ -19,7 +19,7 @@ Node
 const FBSubmitterClient = require('@ministryofjustice/fb-submitter-client-node')
 
 // initialise client
-const submitterClient = new FBSubmitterClient(serviceToken, submitterUrl, serviceSlug)
+const submitterClient = new FBSubmitterClient(serviceSecret, serviceToken, submitterUrl, serviceSlug)
 ```
 
 ### Fetching and storing
