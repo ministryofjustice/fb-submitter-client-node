@@ -1,4 +1,4 @@
-# Form Builder Submitter client (Node)
+# Form Builder Submitter Client (Node)
 
 Client for making requests to Form Builder platform submitter endpoints
 
@@ -14,7 +14,7 @@ Node
 
 ### Loading and initialising
 
-``` javascript
+```js
 // load client
 const FBSubmitterClient = require('@ministryofjustice/fb-submitter-client-node')
 
@@ -24,7 +24,7 @@ const submitterClient = new FBSubmitterClient(serviceSecret, serviceToken, submi
 
 ### Fetching and storing
 
-``` javascript
+```js
 // get submission status
 const status = await submitterClient.getStatus(submissionId)
 
