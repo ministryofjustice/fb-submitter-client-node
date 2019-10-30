@@ -1,3 +1,9 @@
+# Deprecated/Unsupported! 
+This package has been incorporated into its only dependant 
+https://github.com/ministryofjustice/fb-submitter
+
+<hr/>
+
 # Form Builder Submitter Client (Node)
 
 Client for making requests to Form Builder platform submitter endpoints
